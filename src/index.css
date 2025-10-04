@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --text-color: #000000;
+  --text-color-second: #666666;
+  --text-color-third: #0156FF;
+  --border-radius: 9px;
+  --height: 40px;
+  --background-color: #ffffff;
+  --background-color-second: #020203;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100% !important;
+  line-height: 1.5 !important;
+  width: 100%;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
