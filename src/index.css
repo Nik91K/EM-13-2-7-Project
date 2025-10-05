@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+  src: url('./assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
@@ -18,10 +18,12 @@
   --background-color-second: #020203;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 
 html, body, #root {
