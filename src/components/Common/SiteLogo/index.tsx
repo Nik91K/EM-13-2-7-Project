@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import LogoImage from "../../../assets/logo/icon.svg"
-import { SIZES } from "../../../fixtures";
+import { SIZES } from "../../../fixtures/";
+import React from 'react';
 
 type LogoProps = {
     size?: "small" | "medium" | "large",
