@@ -1,6 +1,7 @@
+import React from "react"
 import Header from "../components/Layout/Header"
 import Footer from "../components/Layout/Footer"
-import React from "react"
+import InfoPanel from "../components/Layout/InfoPanel"
 
 const LayoutPage = ({children} : {children: React.ReactNode}) => {
     return (
@@ -9,6 +10,7 @@ const LayoutPage = ({children} : {children: React.ReactNode}) => {
             <main className="flex-1 w-full max-w-7xl mx-auto px-4">
                 {children}
             </main>
+            <InfoPanel />
             <Footer />
         </div>
     )
