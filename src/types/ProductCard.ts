@@ -1,8 +1,8 @@
 export type Product = {
-    stock: boolean,
-    image: string,
-    stars: number,
-    reviews: number,
-    name: string,
+    id: number
+    title: string
     price: number
+    description: string
+    category: string
+    image: string
 }
