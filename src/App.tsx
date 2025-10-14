@@ -23,7 +23,7 @@ function App() {
 
   return (
     <LayoutPage>
-      <div>
+      <div className="grid grid-cols-4 gap-4">
         {loading && <p> loading </p>}
         {error && <p>{error}</p>}
         {products.map(products => (
@@ -31,6 +31,8 @@ function App() {
             id={products.id}
             title={products.title}
             description={products.description}
+            image={products.image}
+            imageTitle={products.title}
           />
         )) }
 
