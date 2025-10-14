@@ -8,7 +8,9 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
   const dispatch = useDispatch<AppDispatch>()
-  const { products, loading, error } = useSelector((state: RootState) => state.products);
+  const { products, error } = useSelector((state: RootState) => state.products);
+  const { loading } = useSelector((state: RootState) => state.ui);
+  const theme = useSelector((state: RootState) => state.userLocalData.theme);
 
   useEffect(() => {
     dispatch(getProducts())
@@ -24,7 +26,8 @@ function App() {
   return (
     <LayoutPage>
       <div className="grid grid-cols-4 gap-4">
-        {loading && <p> loading </p>}
+        <p>{theme}</p>
+        {loading.products && <p> loading </p>}
         {error && <p>{error}</p>}
         {products.map(products => (
           <InfoCard 
